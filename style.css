@@ -1,0 +1,12 @@
+body {
+    background: #2673e7;
+}
+.flag-box {
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #f0e4e4;
+    padding: 10px;
+}
+img {
+    vertical-align: middle;
+}

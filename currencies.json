@@ -1,0 +1,29 @@
+{
+  "USD": {"name": "United States Dollar"},
+  "EUR": {"name": "Euro"},
+  "INR": {"name": "Indian Rupee"},
+  "GBP": {"name": "British Pound"},
+  "JPY": {"name": "Japanese Yen"},
+  "CNY": {"name": "Chinese Yuan"},
+  "AUD": {"name": "Australian Dollar"},
+  "CAD": {"name": "Canadian Dollar"},
+  "SGD": {"name": "Singapore Dollar"},
+  "CHF": {"name": "Swiss Franc"},
+  "NZD": {"name": "New Zealand Dollar"},
+  "RUB": {"name": "Russian Ruble"},
+  "ZAR": {"name": "South African Rand"},
+  "BRL": {"name": "Brazilian Real"},
+  "KRW": {"name": "South Korean Won"},
+  "MXN": {"name": "Mexican Peso"},
+  "HKD": {"name": "Hong Kong Dollar"},
+  "SEK": {"name": "Swedish Krona"},
+  "NOK": {"name": "Norwegian Krone"},
+  "TRY": {"name": "Turkish Lira"},
+  "AED": {"name": "United Arab Emirates Dirham"},
+  "PLN": {"name": "Polish Zloty"},
+  "THB": {"name": "Thai Baht"},
+  "IDR": {"name": "Indonesian Rupiah"},
+  "MYR": {"name": "Malaysian Ringgit"}
+
+}
+

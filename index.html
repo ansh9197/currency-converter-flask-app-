@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container mt-5">
+    <h2 class="text-center">🌍 Currency Converter</h2>
+    <form method="post" class="row g-3">
+        <div class="col-md-4">
+            <label>From:</label>
+            <select class="form-control" name="base" required>
+                {% for code, detail in currencies.items() %}
+                <option value="{{ code }}">{{ code }} - {{ detail.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label>To:</label>
+            <select class="form-control" name="target" required>
+                {% for code, detail in currencies.items() %}
+                <option value="{{ code }}">{{ code }} - {{ detail.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="col-md-4">
+            <label>Amount:</label>
+            <input type="number" step="0.01" class="form-control" name="amount" required>
+        </div>
+        <div class="col-12 text-center">
+            <button class="btn btn-primary mt-3">Convert</button>
+        </div>
+    </form>
+
+    {% if result %}
+    <div class="alert alert-success mt-4 text-center">
+        <strong>Converted Amount:</strong> {{ result }}
+    </div>
+    {% endif %}
+
+    <div class="flag-box mt-5 p-3 bg-light rounded">
+        <marquee scrollamount="4">
+            {% for code, detail in currencies.items() %}
+                <img src="/static/flags/{{ code.lower() }}.png" width="30"> {{ detail.name }} ({{ code }}) &nbsp;&nbsp;
+            {% endfor %}
+        </marquee>
+    </div>
+
+    <div class="text-center mt-3">
+        <a href="/history">View Conversion History</a>
+    </div>
+</div>
+</body>
+</html>
